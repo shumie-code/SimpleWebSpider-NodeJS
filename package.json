@@ -1,0 +1,23 @@
+{
+  "name": "simplewebspider-nodejs",
+  "version": "1.0.0",
+  "description": "SimpleWebSpider utility",
+  "main": "Spider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shumie-code/SimpleWebSpider-NodeJS.git"
+  },
+  "author": "Petros Shumie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shumie-code/SimpleWebSpider-NodeJS/issues"
+  },
+  "homepage": "https://github.com/shumie-code/SimpleWebSpider-NodeJS#readme",
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "superagent": "^7.1.1"
+  }
+}

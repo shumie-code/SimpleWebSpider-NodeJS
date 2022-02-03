@@ -1,11 +1,16 @@
 import { spider }  from './spider.js'
 
-spider(process.argv[2], (err, filename, downloaded) => {
-    if(err) { 
+/**
+ * Alter spider-cli so that we can specify 
+ * the nesting level as additional command-line interface
+ * (CLI) argument.
+ */
+const url = process.argv[2] 
+const nesting = Number.parseInt(process.argv[3], 10) || 1
+spider(url, nesting, err => {
+    if (err) {
         console.error(err)
-    } else if (downloaded) {
-        console.log(`Completed the download of "${filename}`)
-    } else {
-        console.log(`"${filename}" was already downloaded`)
+        process.exit(1)
     }
+    console.log('Download complete')
 })
